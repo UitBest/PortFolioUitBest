@@ -9,7 +9,7 @@
     {{--  Styles  --}}
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@latest/css/materialdesignicons.min.css">
 
-    <link rel="icon" href="/img/UitBest.png" />
+    <link rel="icon" href="/img/UitBestCutOut.png" />
 
     {{--  Scripts  --}}
     @vite('resources/css/app.css')
