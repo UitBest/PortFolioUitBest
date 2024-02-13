@@ -5,33 +5,35 @@
     <meta charset="utf-8">
     <meta name="api-host" content="{API_HOST}">
 
-    <title>Uit Best | Web Development</title>
+    <title>Website Uit Best</title>
 
     <!-- Beschrijving van de pagina -->
     <meta name="description" content="Uit Best biedt unieke en creatieve oplossingen voor jouw bedrijf. Ontdek onze diensten in webdesign, grafisch ontwerp, en digitale marketing. Laat je inspireren door onze projecten en ontdek wat wij voor jouw bedrijf kunnen betekenen.">
 
     <!-- Trefwoorden voor de pagina -->
-    <meta name="keywords" content="Uit Best, Creatieve Oplossingen, Webdesign, Grafisch Ontwerp, Digitale Marketing, Bedrijfsontwikkeling, Innovatie">
+    <meta name="keywords" content="Uit Best, Creatieve Oplossingen, Webdesign Uit Best, Webdesign Best, Website, Grafisch Ontwerp, Digitale Marketing, Bedrijfsontwikkeling, Innovatie, Website Uit Best, Website Best, Best Website">
 
     <!-- Meta tag voor responsive design -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="dark" />
 
     <!-- Open Graph / Facebook Meta Tags -->
-    <meta property="og:title" content="Uit Best - Creatieve Oplossingen voor Jouw Bedrijf">
-    <meta property="og:description" content="Ontdek unieke en creatieve oplossingen voor jouw bedrijf met Uit Best. Van webdesign tot digitale marketing, laat ons je helpen groeien.">
+    <meta property="og:site_name" content="Uit Best" />
+    <meta property="og:title" content="Website Uit Best">
+    <meta property="og:description" content="Uit Best biedt unieke en creatieve oplossingen voor jouw bedrijf. Ontdek onze diensten in webdesign, grafisch ontwerp, en digitale marketing. Laat je inspireren door onze projecten en ontdek wat wij voor jouw bedrijf kunnen betekenen.">
     <meta property="og:image" content="/img/YourBusinessImage.jpg">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://website.uit.best">
 
     <!-- Twitter Card Meta Tags -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Uit Best - Creatieve Oplossingen voor Jouw Bedrijf">
-    <meta name="twitter:description" content="Ontdek unieke en creatieve oplossingen voor jouw bedrijf met Uit Best. Van webdesign tot digitale marketing, laat ons je helpen groeien.">
-    <meta name="twitter:image" content="/img/YourBusinessImage.jpg">
+    <meta name="twitter:title" content="Website Uit Best">
+    <meta name="twitter:description" content="Uit Best biedt unieke en creatieve oplossingen voor jouw bedrijf. Ontdek onze diensten in webdesign, grafisch ontwerp, en digitale marketing. Laat je inspireren door onze projecten en ontdek wat wij voor jouw bedrijf kunnen betekenen.">
+    <meta name="twitter:image" content="/img/UitBestCutOut.png">
+    <meta name="twitter:maxage" content="86400" />
 
     {{--  Styles  --}}
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@latest/css/materialdesignicons.min.css">
-
     <link rel="icon" href="/img/UitBestCutOut.png" />
 
     {{--  Scripts  --}}
