@@ -21,7 +21,7 @@
     <meta property="og:site_name" content="Uit Best" />
     <meta property="og:title" content="Website Uit Best">
     <meta property="og:description" content="Uit Best biedt unieke en creatieve oplossingen voor jouw bedrijf. Ontdek onze diensten in webdesign, grafisch ontwerp, en digitale marketing. Laat je inspireren door onze projecten en ontdek wat wij voor jouw bedrijf kunnen betekenen.">
-    <meta property="og:image" content="/img/YourBusinessImage.jpg">
+    <meta property="og:image" content="https://website.uit.best/img/UitBestCutOut.png">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://website.uit.best">
 
@@ -29,7 +29,7 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Website Uit Best">
     <meta name="twitter:description" content="Uit Best biedt unieke en creatieve oplossingen voor jouw bedrijf. Ontdek onze diensten in webdesign, grafisch ontwerp, en digitale marketing. Laat je inspireren door onze projecten en ontdek wat wij voor jouw bedrijf kunnen betekenen.">
-    <meta name="twitter:image" content="/img/UitBestCutOut.png">
+    <meta name="twitter:image" content="https://website.uit.best/img/UitBestCutOut.png">
     <meta name="twitter:maxage" content="86400" />
 
     {{--  Styles  --}}
