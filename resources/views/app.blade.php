@@ -8,6 +8,7 @@
     <title>Website | Uit Best</title>
 
     <!-- Beschrijving van de pagina -->
+    <meta name="title" content="Uit Best">
     <meta name="description" content="Uit Best biedt unieke en creatieve oplossingen voor jouw bedrijf. Ontdek onze diensten in webdesign, grafisch ontwerp, en digitale marketing. Laat je inspireren door onze projecten en ontdek wat wij voor jouw bedrijf kunnen betekenen.">
 
     <!-- Trefwoorden voor de pagina -->
