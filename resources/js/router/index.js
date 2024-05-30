@@ -4,13 +4,13 @@ const routes = [
     {
         path: '',
         name: 'Layout',
-        component: () => import('@/layouts/Layout.vue'),
+        component: () => import('@/js/layouts/Layout.vue'),
         redirect: { name: 'Home' },
         children: [
             {
                 path: 'home',
                 name: 'Home',
-                component: () => import('@/views/Home.vue'),
+                component: () => import('@/js/views/Home.vue'),
                 meta: {
                     isRoot: true,
                 },
