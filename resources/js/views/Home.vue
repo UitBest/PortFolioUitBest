@@ -39,36 +39,6 @@
                         <v-btn class="mb-6 px-4" text="Portfolio" variant="outlined" />
                     </v-card-actions>
                 </v-card>
-
-                <v-card
-                    class="d-flex flex-column my-10"
-                    :class="! mobile && 'ml-8'"
-                    color="transparent"
-                    elevation="24"
-                    max-width="400"
-                    rounded="xl"
-                    style="backdrop-filter: blur(20px)"
-                    width="100%"
-                >
-                    <v-card-text>
-                        <v-img
-                            class="w-100 bg-transparent align-self-baseline mx-auto"
-                            max-width="400"
-                            style="backdrop-filter: blur(20px)"
-                        >
-                            <template v-slot:default>
-                                <v-img src="/img/JelleCutOut.png" style="filter: sepia(30%) saturate(2) brightness(125%)" />
-                            </template>
-                        </v-img>
-                        <v-divider class="border-opacity-0 mb-6 mx-auto" inset />
-                        <div class="text-center text-disabled mb-2" :class="mobile ? 'text-h5' : 'text-h4'">
-                            Jelle van Oijen
-                        </div>
-                    </v-card-text>
-                    <v-card-actions class="justify-center d-flex flex-column">
-                        <div class="text-disabled text-caption mb-6">* Nog niet beschikbaar *</div>
-                    </v-card-actions>
-                </v-card>
             </v-sheet>
         </v-sheet>
         <v-sheet height="400" />
@@ -80,7 +50,7 @@
         <v-card
             color="dark"
             subtitle="Je word naar een nieuwe pagina gestuurd"
-            title="Let op,"
+            title="Pas op,"
             variant="flat"
         >
             <v-card-actions class="d-flex justify-end">
