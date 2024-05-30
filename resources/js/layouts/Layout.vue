@@ -1,13 +1,13 @@
 <template>
     <v-app>
         <v-navigation-drawer
-            :class="pinned && ! mobile ? '' : 'rounded-lg ma-2'"
+            :class="pinned && !mobile ? '' : 'rounded-lg ma-2'"
             color="transparent"
             elevation="24"
-            :expand-on-hover="! mobile"
+            :expand-on-hover="!mobile"
             permanent
-            :rail="! pinned"
-            :sticky="! pinned || mobile"
+            :rail="!pinned"
+            :sticky="!pinned || mobile"
             style="backdrop-filter: blur(20px)"
         >
             <v-list>
@@ -15,9 +15,9 @@
                     subtitle="info@uit.best"
                     title="Uit Best"
                 >
-                    <template v-slot:prepend>
+                    <template #prepend>
                         <v-btn
-                            v-if="mobile && ! pinned"
+                            v-if="mobile && !pinned"
                             class="text-white cursor-pointer"
                             color="white"
                             density="compact"
@@ -32,24 +32,28 @@
                             @click="showProfileOverlay = true"
                         />
                     </template>
-                    <template v-slot:append>
+                    <template #append>
                         <v-btn
-                            v-show="pinned || ! mobile"
+                            v-show="pinned || !mobile"
                             class="align-self-end"
                             color="white"
                             :icon="mobile ? 'mdi-close' : (pinned ? 'mdi-pin' : 'mdi-pin-outline') + ' mdi-rotate-45'"
                             size="36"
                             variant="text"
-                            @click="mobile ? pinned = false : pinned = ! pinned"
+                            @click="mobile ? (pinned = false) : (pinned = !pinned)"
                         />
                     </template>
                 </v-list-item>
             </v-list>
 
-            <v-divider v-show="pinned || ! mobile" />
+            <v-divider v-show="pinned || !mobile" />
 
             <v-expand-transition>
-                <v-list v-show="pinned || ! mobile" density="compact" nav>
+                <v-list
+                    v-show="pinned || !mobile"
+                    density="compact"
+                    nav
+                >
                     <v-list-item
                         v-for="(item, key) in defaultRoutes"
                         :key="key"
@@ -60,7 +64,9 @@
 
                     <v-divider class="my-4" />
 
-                    <div class="text-truncate px-2 pb-4 text-center text-disabled text-caption">*Deze items kunt u verwachten*</div>
+                    <div class="text-truncate px-2 pb-4 text-center text-disabled text-caption">
+                        *Deze items kunt u verwachten*
+                    </div>
 
                     <v-list-item
                         v-for="(item, key) in unavailbleRoutes"
@@ -74,7 +80,10 @@
             </v-expand-transition>
         </v-navigation-drawer>
 
-        <v-main :class="pinned && ! mobile ? '' : 'px-0'" style="min-height: 100svh;">
+        <v-main
+            :class="pinned && !mobile ? '' : 'px-0'"
+            style="min-height: 100svh"
+        >
             <router-view />
 
             <v-footer color="dark">
@@ -87,7 +96,13 @@
             class="d-flex justify-center align-center"
             eager
         >
-            <ProfileOverlay @close="() => { showProfileOverlay = false }" />
+            <ProfileOverlay
+                @close="
+                    () => {
+                        showProfileOverlay = false;
+                    }
+                "
+            />
         </v-overlay>
     </v-app>
 </template>
@@ -105,7 +120,7 @@
 
     const route = useRoute();
 
-    const pinned = ref(! mobile.value);
+    const pinned = ref(!mobile.value);
 
     const showWebsites = ref(false);
 
@@ -123,28 +138,34 @@
         {
             icon: 'mdi-file',
             name: 'Templates',
-            to: '/prices',
+            to: '/',
             disabled: true,
         },
         {
             icon: 'mdi-cash',
             name: 'Prijzen',
-            to: '/prices',
+            to: '/',
             disabled: true,
         },
         {
             icon: 'mdi-application',
             name: 'Portfolio',
-            to: '/prices',
+            to: '/',
             disabled: true,
         },
     ];
 
-    watch(route, (newRoute) => {
-        if (newRoute.path === '/websites') {
-            showWebsites.value = true;
-        }
-    }, { immediate: true });
+    watch(
+        route,
+        (newRoute) => {
+            if (newRoute.path === '/websites') {
+                showWebsites.value = true;
+            }
+        },
+        { immediate: true }
+    );
 
-    watch(mobile, (value) => { pinned.value = ! value; });
+    watch(mobile, (value) => {
+        pinned.value = !value;
+    });
 </script>
